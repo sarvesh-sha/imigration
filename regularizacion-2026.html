@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regularización 2026 | Movilidad Global</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="min-h-screen bg-white">
+
+  <!-- Top Banner -->
+  <div id="top-banner" class="fixed top-0 left-0 right-0 z-[60] transition-transform duration-300 translate-y-0">
+    <a href="regularizacion-2026.html" class="block w-full bg-gradient-to-r from-red-800 via-red-700 to-red-800 group relative overflow-hidden z-[60]">
+      <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
+      <div class="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-yellow-400 to-transparent"></div>
+      <div class="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-yellow-400/50 to-transparent"></div>
+      <div class="container mx-auto px-6">
+        <div class="flex items-center justify-center gap-4 py-3 relative z-10">
+          <span class="relative flex h-2.5 w-2.5 flex-shrink-0">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-300 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-yellow-400"></span>
+          </span>
+          <span class="text-sm md:text-base font-semibold text-white tracking-wide whitespace-nowrap">
+            <span class="hidden sm:inline">🇪🇸</span> Regularización Extraordinaria España <span class="text-yellow-300 font-bold">2026</span> · Ventana Abril–Junio
+          </span>
+          <span class="hidden md:inline-flex items-center gap-1.5 px-4 py-1 bg-yellow-400 text-red-900 text-sm font-bold rounded-full group-hover:bg-yellow-300 transition-colors whitespace-nowrap">Comprobar si califico <i class="ri-arrow-right-s-line"></i></span>
+          <span class="md:hidden text-yellow-400 font-bold text-lg">→</span>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <!-- Navbar -->
+  <nav id="navbar" class="fixed left-0 right-0 z-50 transition-all duration-300 top-[44px] bg-white/90 backdrop-blur-md">
+    <div class="container mx-auto px-6">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-3 group">
+          <img src="https://static.readdy.ai/image/46b10d6d34564fa20f0877258b978e8a/19185ed623c480d9b91b63a3d630ffe5.png" alt="Movilidad Global Legaltech Logo" class="h-20 w-auto drop-shadow-md group-hover:scale-105 transition-transform duration-200">
+          <div class="flex flex-col">
+            <span class="text-2xl font-bold text-slate-900 tracking-tight leading-tight">Movilidad Global</span>
+            <span class="text-xs font-semibold text-red-700 uppercase tracking-widest leading-tight">Legaltech</span>
+          </div>
+        </a>
+        <div class="hidden lg:flex items-center gap-8">
+          <a href="index.html" class="text-slate-700 hover:text-slate-900 font-medium transition-colors whitespace-nowrap">Inicio</a>
+          <a href="nosotros.html" class="text-slate-700 hover:text-slate-900 font-medium transition-colors whitespace-nowrap">Nosotros</a>
+          <a href="servicios.html" class="text-slate-700 hover:text-slate-900 font-medium transition-colors whitespace-nowrap">Servicios</a>
+          <a href="precios.html" class="text-slate-700 hover:text-slate-900 font-medium transition-colors whitespace-nowrap">Precios</a>
+          <a href="contacto.html" class="text-slate-700 hover:text-slate-900 font-medium transition-colors whitespace-nowrap">Contacto</a>
+        </div>
+        <div class="hidden lg:flex items-center gap-4">
+          <a href="contacto.html" class="px-6 py-2.5 bg-red-700 hover:bg-red-800 text-white font-semibold rounded-lg transition-all whitespace-nowrap">Contactar →</a>
+        </div>
+        <button onclick="toggleMobileMenu()" class="lg:hidden flex flex-col gap-1.5 cursor-pointer" aria-label="Toggle mobile menu">
+          <span class="w-6 h-0.5 bg-slate-900 transition-all block"></span>
+          <span class="w-6 h-0.5 bg-slate-900 transition-all block"></span>
+          <span class="w-6 h-0.5 bg-slate-900 transition-all block"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="fixed inset-0 z-40 lg:hidden hidden">
+    <div class="absolute inset-0 bg-black/50" onclick="toggleMobileMenu()"></div>
+    <div class="absolute top-0 right-0 bottom-0 w-80 bg-white shadow-2xl p-6 overflow-y-auto">
+      <div class="flex flex-col gap-4">
+        <a href="index.html" class="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 rounded-lg transition-colors"><span class="text-xl">🏠</span><span class="font-medium text-slate-900">Inicio</span></a>
+        <a href="nosotros.html" class="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 rounded-lg transition-colors"><span class="text-xl">👤</span><span class="font-medium text-slate-900">Nosotros</span></a>
+        <a href="servicios.html" class="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 rounded-lg transition-colors"><span class="text-xl">📋</span><span class="font-medium text-slate-900">Servicios</span></a>
+        <a href="precios.html" class="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 rounded-lg transition-colors"><span class="text-xl">💳</span><span class="font-medium text-slate-900">Precios</span></a>
+        <a href="contacto.html" class="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 rounded-lg transition-colors"><span class="text-xl">📧</span><span class="font-medium text-slate-900">Contacto</span></a>
+        <a href="contacto.html" class="mt-4 px-6 py-3 bg-red-700 hover:bg-red-800 text-white font-semibold rounded-lg transition-all whitespace-nowrap text-center block">Contactar →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 pt-[124px] pb-20">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(212,160,23,0.08),transparent_50%)]"></div>
+    <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-yellow-500/[0.08] rounded-full blur-3xl"></div>
+    <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-red-700 via-yellow-500 to-red-700"></div>
+    <div class="container mx-auto px-6 relative z-10">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <!-- Left -->
+        <div>
+          <div class="inline-flex items-center gap-2 px-4 py-2 bg-yellow-500/10 border border-yellow-500/20 rounded-full mb-6">
+            <span class="relative flex h-2 w-2 flex-shrink-0">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-yellow-400"></span>
+            </span>
+            <span class="text-sm text-yellow-300">Ventana oficial: Abril – 30 Junio 2026</span>
+          </div>
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+            Regularización Extraordinaria <span class="text-yellow-400">España 2026.</span>
+          </h1>
+          <p class="text-lg text-gray-300 mb-8 max-w-xl">
+            Más de <strong class="text-white">500.000 personas</strong> podrían ser elegibles. Comprueba si cumples los criterios principales en minutos.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="contacto.html" class="px-8 py-4 bg-red-700 hover:bg-red-800 text-white font-semibold rounded-lg transition-all whitespace-nowrap inline-block text-center">✓ Comprobar si califico →</a>
+            <a href="precios.html" class="px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-lg border border-white/20 transition-all whitespace-nowrap inline-block text-center">Ver precio</a>
+          </div>
+        </div>
+        <!-- Right: Criteria Card -->
+        <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+          <h2 class="text-xl font-bold text-white mb-6">✓ Criterios principales de elegibilidad</h2>
+          <div class="space-y-4">
+            <div class="flex gap-4 p-4 bg-yellow-500/20 rounded-lg">
+              <span class="text-2xl flex-shrink-0">📅</span>
+              <div>
+                <h3 class="font-semibold text-white mb-1">Entrada antes del 31/12/2025</h3>
+                <p class="text-sm text-gray-300">Debes haber entrado en España antes del 31 de diciembre de 2025.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 p-4 bg-yellow-500/20 rounded-lg">
+              <span class="text-2xl flex-shrink-0">🏠</span>
+              <div>
+                <h3 class="font-semibold text-white mb-1">Empadronamiento</h3>
+                <p class="text-sm text-gray-300">Estar empadronado en un municipio español de forma continuada.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 p-4 bg-yellow-500/20 rounded-lg">
+              <span class="text-2xl flex-shrink-0">📄</span>
+              <div>
+                <h3 class="font-semibold text-white mb-1">Documentación de identidad</h3>
+                <p class="text-sm text-gray-300">Pasaporte o documento de viaje válido.
+                  <span class="inline-flex items-center px-2 py-0.5 bg-yellow-500/30 text-yellow-200 rounded text-xs font-medium mt-1">⚠ Incluir páginas en blanco</span>
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-4 p-4 bg-yellow-500/20 rounded-lg">
+              <span class="text-2xl flex-shrink-0">✋</span>
+              <div>
+                <h3 class="font-semibold text-white mb-1">Sin antecedentes graves</h3>
+                <p class="text-sm text-gray-300">No tener antecedentes penales graves en España ni en países de residencia previa.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="py-24 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-slate-900 text-center mb-16">4 pasos, nosotros hacemos 3.</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div class="text-center">
+          <div class="w-16 h-16 rounded-full bg-red-700 text-white font-bold text-2xl flex items-center justify-center mx-auto mb-4">1</div>
+          <h3 class="font-semibold text-slate-900 mb-2">Regístrate</h3>
+          <p class="text-gray-600 text-sm">Crea tu cuenta y comprueba si calificas en minutos.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 rounded-full bg-red-700 text-white font-bold text-2xl flex items-center justify-center mx-auto mb-4">2</div>
+          <h3 class="font-semibold text-slate-900 mb-2">Sube tus docs</h3>
+          <p class="text-gray-600 text-sm">Documentos desde el móvil. Te guiamos paso a paso.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 rounded-full bg-red-700 text-white font-bold text-2xl flex items-center justify-center mx-auto mb-4">3</div>
+          <h3 class="font-semibold text-slate-900 mb-2">Nosotros preparamos</h3>
+          <p class="text-gray-600 text-sm">Revisamos, completamos y firmas digitalmente.</p>
+        </div>
+        <div class="text-center">
+          <div class="w-16 h-16 rounded-full bg-red-700 text-white font-bold text-2xl flex items-center justify-center mx-auto mb-4">4</div>
+          <h3 class="font-semibold text-slate-900 mb-2">Presentación automática</h3>
+          <p class="text-gray-600 text-sm">Enviamos tu solicitud en cuanto abra el portal.</p>
+        </div>
+      </div>
+      <div class="text-center">
+        <a href="contacto.html" class="inline-block px-8 py-4 bg-red-700 hover:bg-red-800 text-white font-semibold rounded-lg transition-all whitespace-nowrap">Empezar ahora — es gratis →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-stone-800 text-white py-16">
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <div>
+          <div class="mb-6 flex items-center gap-3"><img src="https://static.readdy.ai/image/46b10d6d34564fa20f0877258b978e8a/19185ed623c480d9b91b63a3d630ffe5.png" alt="Logo" class="h-16 w-auto drop-shadow-md"><div class="flex flex-col"><span class="text-2xl font-bold text-white tracking-tight leading-tight">Movilidad Global</span><span class="text-xs font-semibold text-red-400 uppercase tracking-widest leading-tight">Legaltech</span></div></div>
+          <p class="text-stone-400 mb-6">Tecnología junto con abogados especialistas para hacer realidad tu proyecto de vida en España.</p>
+          <div class="flex gap-4"><div class="w-10 h-10 flex items-center justify-center bg-white/10 hover:bg-white/20 rounded-lg cursor-pointer transition-all"><i class="ri-instagram-line text-xl"></i></div><div class="w-10 h-10 flex items-center justify-center bg-white/10 hover:bg-white/20 rounded-lg cursor-pointer transition-all"><i class="ri-whatsapp-line text-xl"></i></div></div>
+        </div>
+        <div><h3 class="font-bold text-lg mb-4">Servicios</h3><div class="space-y-3"><a href="regularizacion-2026.html" class="block text-stone-400 hover:text-white transition-colors">Regularización 2026</a><a href="servicios.html" class="block text-stone-400 hover:text-white transition-colors">Arraigos</a><a href="servicios.html" class="block text-stone-400 hover:text-white transition-colors">Familiar de Español</a><a href="servicios.html" class="block text-stone-400 hover:text-white transition-colors">Renovación</a></div></div>
+        <div><h3 class="font-bold text-lg mb-4">Empresa</h3><div class="space-y-3"><a href="nosotros.html" class="block text-stone-400 hover:text-white transition-colors">Quiénes somos</a><a href="nosotros.html" class="block text-stone-400 hover:text-white transition-colors">El equipo</a><a href="precios.html" class="block text-stone-400 hover:text-white transition-colors">Precios</a><a href="contacto.html" class="block text-stone-400 hover:text-white transition-colors">Contacto</a></div></div>
+        <div><h3 class="font-bold text-lg mb-4">Legal</h3><div class="space-y-3"><a href="#" class="block text-stone-400 hover:text-white transition-colors">Aviso legal</a><a href="#" class="block text-stone-400 hover:text-white transition-colors">Privacidad · RGPD</a><a href="#" class="block text-stone-400 hover:text-white transition-colors">Términos de servicio</a><a href="mailto:hola@iassist.es" class="block text-stone-400 hover:text-white transition-colors">hola@iassist.es</a></div></div>
+      </div>
+      <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-stone-400"><span>En Movilidad Global juntamos años de experiencia con tecnología a tu servicio.</span><div class="flex items-center gap-4"><span>🇪🇸 España · 2026</span><a href="https://readdy.ai/?ref=logo" target="_blank" rel="noopener noreferrer" class="text-stone-400 hover:text-white transition-colors">Powered by Readdy</a></div></div>
+    </div>
+  </footer>
+</div>
+
+<script>
+function toggleMobileMenu(){document.getElementById('mobile-menu').classList.toggle('hidden')}
+window.addEventListener('scroll',function(){var b=document.getElementById('top-banner'),n=document.getElementById('navbar'),s=window.scrollY>50;b.classList.toggle('-translate-y-full',s);b.classList.toggle('translate-y-0',!s);n.classList.toggle('top-0',s);n.classList.toggle('top-[44px]',!s);n.classList.toggle('bg-white',s);n.classList.toggle('shadow-lg',s);n.classList.toggle('bg-white/90',!s);n.classList.toggle('backdrop-blur-md',!s)});
+</script>
+</body>
+</html>

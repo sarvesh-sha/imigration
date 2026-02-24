@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios | Movilidad Global</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="min-h-screen bg-white">
+
+  <!-- Top Banner -->
+  <div id="top-banner" class="fixed top-0 left-0 right-0 z-[60] transition-transform duration-300 translate-y-0">
+    <a href="regularizacion-2026.html" class="block w-full bg-gradient-to-r from-red-800 via-red-700 to-red-800 group relative overflow-hidden z-[60]">
+      <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
+      <div class="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-yellow-400 to-transparent"></div>
+      <div class="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-yellow-400/50 to-transparent"></div>
+      <div class="container mx-auto px-6">
+        <div class="flex items-center justify-center gap-4 py-3 relative z-10">
+          <span class="relative flex h-2.5 w-2.5 flex-shrink-0">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-300 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-yellow-400"></span>
+          </span>
+          <span class="text-sm md:text-base font-semibold text-white tracking-wide whitespace-nowrap">
+            Regularización Extraordinaria España 2026 · Ventana Abril–Junio
+          </span>
+          <span class="hidden md:inline-flex items-center gap-1.5 px-4 py-1 bg-yellow-400 text-red-900 text-sm font-bold rounded-full group-hover:bg-yellow-300 transition-colors whitespace-nowrap">Comprobar si califico <i class="ri-arrow-right-s-line"></i></span>
+          <span class="md:hidden text-yellow-400 font-bold text-lg">→</span>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <!-- Navbar -->
+  <nav id="navbar" class="fixed left-0 right-0 z-50 transition-all duration-300 top-[44px] bg-white/90 backdrop-blur-md">
+    <div class="container mx-auto px-6">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-3 group">
+          <img src="https://static.readdy.ai/image/46b10d6d34564fa20f0877258b978e8a/19185ed623c480d9b91b63a3d630ffe5.png" alt="Movilidad Global Legaltech Logo" class="h-20 w-auto drop-shadow-md group-hover:scale-105 transition-transform duration-200">
+          <div class="flex flex-col">
+            <span class="text-2xl font-bold text-slate-900 tracking-tight leading-tight">Movilidad Global</span>
+            <span class="text-xs font-semibold text-red-700 uppercase tracking-widest leading-tight">Legaltech</span>
+          </div>
+        </a>
+        <div class="hidden lg:flex items-center gap-8">
+          <a href="index.html" class="text-slate-700 hover:text-slate-900 font-medium transition-colors whitespace-nowrap">Inicio</a>
+          <a href="nosotros.html" class="text-slate-700 hover:text-slate-900 font-medium transition-colors whitespace-nowrap">Nosotros</a>
+          <a href="servicios.html" class="text-slate-700 hover:text-slate-900 font-medium transition-colors whitespace-nowrap">Servicios</a>
+          <a href="precios.html" class="text-slate-700 hover:text-slate-900 font-medium transition-colors whitespace-nowrap">Precios</a>
+          <a href="contacto.html" class="text-slate-700 hover:text-slate-900 font-medium transition-colors whitespace-nowrap">Contacto</a>
+        </div>
+        <div class="hidden lg:flex items-center gap-4">
+          <a href="contacto.html" class="px-6 py-2.5 bg-red-700 hover:bg-red-800 text-white font-semibold rounded-lg transition-all whitespace-nowrap">Contactar →</a>
+        </div>
+        <button onclick="toggleMobileMenu()" class="lg:hidden flex flex-col gap-1.5 cursor-pointer" aria-label="Toggle mobile menu">
+          <span class="w-6 h-0.5 bg-slate-900 transition-all block"></span>
+          <span class="w-6 h-0.5 bg-slate-900 transition-all block"></span>
+          <span class="w-6 h-0.5 bg-slate-900 transition-all block"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="fixed inset-0 z-40 lg:hidden hidden">
+    <div class="absolute inset-0 bg-black/50" onclick="toggleMobileMenu()"></div>
+    <div class="absolute top-0 right-0 bottom-0 w-80 bg-white shadow-2xl p-6 overflow-y-auto">
+      <div class="flex flex-col gap-4">
+        <a href="index.html" class="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 rounded-lg transition-colors"><span class="text-xl">🏠</span><span class="font-medium text-slate-900">Inicio</span></a>
+        <a href="nosotros.html" class="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 rounded-lg transition-colors"><span class="text-xl">👤</span><span class="font-medium text-slate-900">Nosotros</span></a>
+        <a href="servicios.html" class="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 rounded-lg transition-colors"><span class="text-xl">📋</span><span class="font-medium text-slate-900">Servicios</span></a>
+        <a href="precios.html" class="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 rounded-lg transition-colors"><span class="text-xl">💳</span><span class="font-medium text-slate-900">Precios</span></a>
+        <a href="contacto.html" class="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 rounded-lg transition-colors"><span class="text-xl">📧</span><span class="font-medium text-slate-900">Contacto</span></a>
+        <a href="contacto.html" class="mt-4 px-6 py-3 bg-red-700 hover:bg-red-800 text-white font-semibold rounded-lg transition-all whitespace-nowrap text-center block">Contactar →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section class="relative pt-32 pb-20">
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://readdy.ai/api/search-image?query=Aerial%20view%20of%20a%20busy%20Spanish%20government%20office%20building%20exterior%20with%20warm%20sandstone%20facade%20and%20people%20walking%20on%20the%20plaza%20below%2C%20golden%20hour%20sunlight%20casting%20long%20shadows%2C%20warm%20amber%20and%20terracotta%20tones%2C%20architectural%20photography%20with%20cinematic%20lighting%20and%20slight%20atmospheric%20haze%2C%20professional%20wide%20angle%20composition&width=1400&height=600&seq=servicios-hero-v3&orientation=landscape');"></div>
+    <div class="absolute inset-0 bg-slate-900/70"></div>
+    <div class="container mx-auto px-6 relative z-10">
+      <div class="max-w-4xl">
+        <h1 class="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
+          Todo lo que <span class="text-yellow-400">gestionamos.</span>
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl">
+          Servicios de inmigración y extranjería para vivir y trabajar legalmente en España. Desde regularización hasta reagrupación familiar — te acompañamos en cada paso.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service 1 - Regularización 2026 -->
+  <section id="regularizacion" class="py-24 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="inline-flex items-center gap-2 px-4 py-2 bg-red-100 border border-red-200 rounded-full mb-6">
+        <span class="relative flex h-2 w-2 flex-shrink-0">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+        </span>
+        <span class="text-sm font-semibold text-red-800">Oferta principal · Ventana Abr–Jun 2026</span>
+      </div>
+      <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6">Regularización Extraordinaria España 2026</h2>
+      <p class="text-lg text-gray-600 mb-4 max-w-3xl">
+        Una ventana excepcional para regularizar tu situación en España. Se estima que más de 500.000 personas pueden ser elegibles si cumplen los requisitos de residencia y arraigo.
+      </p>
+      <p class="text-lg text-gray-600 mb-12 max-w-3xl">
+        Presentamos tu solicitud durante la ventana oficial (abril–junio 2026). Nuestro equipo revisa tu caso, prepara la documentación y te guía hasta la resolución.
+      </p>
+      <div class="grid md:grid-cols-3 gap-8 mb-12">
+        <div class="bg-slate-50 rounded-xl p-6">
+          <div class="w-12 h-12 flex items-center justify-center bg-red-100 rounded-lg mb-4">
+            <i class="ri-calendar-check-line text-2xl text-red-700"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 mb-3">Plazos clave</h3>
+          <ul class="space-y-2 text-gray-600 list-none">
+            <li>• Apertura del portal: abril 2026</li>
+            <li>• Cierre de presentación: 30 junio 2026</li>
+            <li>• Resolución estimada: 3–6 meses</li>
+          </ul>
+        </div>
+        <div class="bg-slate-50 rounded-xl p-6">
+          <div class="w-12 h-12 flex items-center justify-center bg-red-100 rounded-lg mb-4">
+            <i class="ri-file-list-3-line text-2xl text-red-700"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 mb-3">Documentación necesaria</h3>
+          <ul class="space-y-2 text-gray-600 list-none">
+            <li>• Pasaporte (todas las páginas)</li>
+            <li>• Empadronamiento continuado</li>
+            <li>• Antecedentes penales</li>
+            <li>• Pruebas de arraigo</li>
+          </ul>
+        </div>
+        <div class="bg-slate-50 rounded-xl p-6">
+          <div class="w-12 h-12 flex items-center justify-center bg-red-100 rounded-lg mb-4">
+            <i class="ri-shield-check-line text-2xl text-red-700"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 mb-3">Lo que hacemos por ti</h3>
+          <ul class="space-y-2 text-gray-600 list-none">
+            <li>• Evaluación de elegibilidad</li>
+            <li>• Preparación y revisión de expediente</li>
+            <li>• Presentación en el portal oficial</li>
+            <li>• Seguimiento hasta resolución</li>
+          </ul>
+        </div>
+      </div>
+      <div class="bg-amber-50 border border-amber-200 rounded-xl p-6 mb-8">
+        <p class="text-amber-900"><strong>Importante:</strong> No todos los casos califican. Requisitos de residencia continuada en España antes de una fecha límite y demostración de arraigo. Te ayudamos a comprobar si cumples los criterios antes de iniciar.</p>
+      </div>
+      <div class="flex flex-wrap gap-4 mb-6">
+        <a href="regularizacion-2026.html" class="px-8 py-4 bg-red-700 hover:bg-red-800 text-white font-semibold rounded-lg transition-all whitespace-nowrap inline-block">Comprobar si califico →</a>
+        <a href="contacto.html#form" class="px-8 py-4 bg-white border-2 border-slate-300 hover:border-slate-400 text-slate-700 font-semibold rounded-lg transition-all whitespace-nowrap inline-block">Consultar mi caso</a>
+      </div>
+      <p class="text-sm text-gray-500">Tasa de aprobación en procesos similares: <strong class="text-slate-700">98%</strong></p>
+    </div>
+  </section>
+
+  <!-- Service 2 - Arraigo Social/Laboral -->
+  <section id="arraigo" class="py-24 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="inline-flex items-center gap-2 px-4 py-2 bg-yellow-100 border border-yellow-200 rounded-full mb-6">
+        <span class="w-2 h-2 bg-yellow-500 rounded-full"></span>
+        <span class="text-sm font-semibold text-yellow-800">Disponible</span>
+      </div>
+      <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6">Arraigo Social y Arraigo Laboral</h2>
+      <p class="text-lg text-gray-600 mb-4 max-w-3xl">
+        Si llevas más de 2 años residiendo en España de forma continuada, puedes optar a un permiso de residencia por arraigo. Existen dos vías principales: social (por integración) y laboral (por trabajo previo).
+      </p>
+      <p class="text-lg text-gray-600 mb-12 max-w-3xl">
+        Cada modalidad tiene requisitos específicos de documentación y plazos. Te asesoramos sobre cuál se adapta mejor a tu situación y te acompañamos en todo el proceso.
+      </p>
+      <div class="grid md:grid-cols-3 gap-8 mb-12">
+        <div class="bg-slate-50 rounded-xl p-6">
+          <div class="w-12 h-12 flex items-center justify-center bg-yellow-100 rounded-lg mb-4">
+            <i class="ri-user-heart-line text-2xl text-yellow-700"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 mb-3">Arraigo Social</h3>
+          <ul class="space-y-2 text-gray-600 list-none">
+            <li>• 3 años de residencia continuada</li>
+            <li>• Informe de inserción social</li>
+            <li>• Contrato de trabajo o medios de vida</li>
+            <li>• Sin antecedentes penales</li>
+          </ul>
+        </div>
+        <div class="bg-slate-50 rounded-xl p-6">
+          <div class="w-12 h-12 flex items-center justify-center bg-yellow-100 rounded-lg mb-4">
+            <i class="ri-briefcase-line text-2xl text-yellow-700"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 mb-3">Arraigo Laboral</h3>
+          <ul class="space-y-2 text-gray-600 list-none">
+            <li>• 2 años de residencia continuada</li>
+            <li>• Contrato de trabajo en vigor</li>
+            <li>• Cotizaciones a la Seguridad Social</li>
+            <li>• Informe de vida laboral</li>
+          </ul>
+        </div>
+        <div class="bg-slate-50 rounded-xl p-6">
+          <div class="w-12 h-12 flex items-center justify-center bg-yellow-100 rounded-lg mb-4">
+            <i class="ri-file-text-line text-2xl text-yellow-700"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 mb-3">Documentación común</h3>
+          <ul class="space-y-2 text-gray-600 list-none">
+            <li>• Pasaporte en vigor</li>
+            <li>• Empadronamiento histórico</li>
+            <li>• Antecedentes penales</li>
+            <li>• Tasas abonadas</li>
+          </ul>
+        </div>
+      </div>
+      <div class="bg-gray-100 border border-gray-200 rounded-xl p-6 mb-8">
+        <p class="text-gray-700">El informe de inserción social se solicita en los servicios sociales de tu municipio. Te indicamos los pasos y plazos según tu localidad.</p>
+      </div>
+      <div class="flex flex-wrap gap-2 mb-6">
+        <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">Arraigo social</span>
+        <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">Arraigo laboral</span>
+        <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">2+ años residencia</span>
+      </div>
+      <a href="contacto.html#form" class="inline-block px-8 py-4 bg-red-700 hover:bg-red-800 text-white font-semibold rounded-lg transition-all whitespace-nowrap">Consultar mi caso →</a>
+    </div>
+  </section>
+
+  <!-- Service 3 - Renovación de Permisos -->
+  <section id="renovacion" class="py-24 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <div class="inline-flex items-center gap-2 px-4 py-2 bg-yellow-100 border border-yellow-200 rounded-full mb-6">
+        <span class="w-2 h-2 bg-yellow-500 rounded-full"></span>
+        <span class="text-sm font-semibold text-yellow-800">Disponible</span>
+      </div>
+      <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6">Renovación de Permisos</h2>
+      <p class="text-lg text-gray-600 mb-4 max-w-3xl">
+        Renovar tu permiso de residencia o trabajo a tiempo es fundamental para mantener tu situación regular. La administración exige plazos concretos y documentación actualizada.
+      </p>
+      <p class="text-lg text-gray-600 mb-12 max-w-3xl">
+        Te recordamos las fechas clave, revisamos tu expediente antes de presentar y evitamos errores que pueden causar denegaciones o retrasos.
+      </p>
+      <div class="grid md:grid-cols-3 gap-8 mb-12">
+        <div class="bg-white border border-gray-200 rounded-xl p-6">
+          <div class="w-12 h-12 flex items-center justify-center bg-amber-100 rounded-lg mb-4">
+            <i class="ri-time-line text-2xl text-amber-700"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 mb-3">Plazos legales</h3>
+          <ul class="space-y-2 text-gray-600 list-none">
+            <li>• Solicitud: 60 días antes de caducar</li>
+            <li>• Hasta 90 días antes en algunos casos</li>
+            <li>• Prórroga de estancia durante tramitación</li>
+          </ul>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-xl p-6">
+          <div class="w-12 h-12 flex items-center justify-center bg-amber-100 rounded-lg mb-4">
+            <i class="ri-list-check-2 text-2xl text-amber-700"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 mb-3">Tipos de permisos</h3>
+          <ul class="space-y-2 text-gray-600 list-none">
+            <li>• Residencia y trabajo (cuenta ajena/propia)</li>
+            <li>• Residencia por reagrupación</li>
+            <li>• Estudiante a trabajo</li>
+            <li>• Arraigo a residencia larga duración</li>
+          </ul>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-xl p-6">
+          <div class="w-12 h-12 flex items-center justify-center bg-amber-100 rounded-lg mb-4">
+            <i class="ri-alert-line text-2xl text-amber-700"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 mb-3">Causas de denegación</h3>
+          <ul class="space-y-2 text-gray-600 list-none">
+            <li>• Documentación incompleta o desactualizada</li>
+            <li>• Falta de cotizaciones o contrato</li>
+            <li>• Antecedentes penales</li>
+            <li>• Presentación fuera de plazo</li>
+          </ul>
+        </div>
+      </div>
+      <div class="bg-amber-50 border border-amber-200 rounded-xl p-6 mb-8">
+        <p class="text-amber-900"><strong>Atención:</strong> Presentar fuera de plazo puede suponer la pérdida de tu permiso. Si tu tarjeta caduca pronto, contacta cuanto antes para preparar la renovación.</p>
+      </div>
+      <div class="flex flex-wrap gap-2 mb-6">
+        <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">Renovación</span>
+        <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">Plazos</span>
+        <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">Trabajo</span>
+      </div>
+      <a href="contacto.html#form" class="inline-block px-8 py-4 bg-red-700 hover:bg-red-800 text-white font-semibold rounded-lg transition-all whitespace-nowrap">Renovar mi permiso →</a>
+    </div>
+  </section>
+
+  <!-- Service 4 - Reagrupación Familiar -->
+  <section id="reagrupacion" class="py-24 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="inline-flex items-center gap-2 px-4 py-2 bg-yellow-100 border border-yellow-200 rounded-full mb-6">
+        <span class="w-2 h-2 bg-yellow-500 rounded-full"></span>
+        <span class="text-sm font-semibold text-yellow-800">Disponible</span>
+      </div>
+      <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6">Reagrupación Familiar</h2>
+      <p class="text-lg text-gray-600 mb-4 max-w-3xl">
+        Si tienes residencia legal en España, puedes solicitar la reagrupación de familiares directos: cónyuge, hijos menores o mayores dependientes, y padres mayores de 65 años (o menores en circunstancias excepcionales).
+      </p>
+      <p class="text-lg text-gray-600 mb-12 max-w-3xl">
+        El proceso implica requisitos económicos, de vivienda y documentación tanto en España como en el país de origen. Gestionamos la coordinación internacional y te guiamos en cada etapa.
+      </p>
+      <div class="grid md:grid-cols-3 gap-8 mb-12">
+        <div class="bg-slate-50 rounded-xl p-6">
+          <div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-lg mb-4">
+            <i class="ri-group-line text-2xl text-blue-700"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 mb-3">¿A quién?</h3>
+          <ul class="space-y-2 text-gray-600 list-none">
+            <li>• Cónyuge o pareja de hecho</li>
+            <li>• Hijos menores de 18 años</li>
+            <li>• Hijos mayores con discapacidad</li>
+            <li>• Padres mayores de 65 años</li>
+          </ul>
+        </div>
+        <div class="bg-slate-50 rounded-xl p-6">
+          <div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-lg mb-4">
+            <i class="ri-money-euro-circle-line text-2xl text-blue-700"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 mb-3">Requisitos económicos</h3>
+          <ul class="space-y-2 text-gray-600 list-none">
+            <li>• IPREM vigente según unidad familiar</li>
+            <li>• Contrato de trabajo o medios de vida</li>
+            <li>• Cotizaciones a la Seguridad Social</li>
+          </ul>
+        </div>
+        <div class="bg-slate-50 rounded-xl p-6">
+          <div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-lg mb-4">
+            <i class="ri-global-line text-2xl text-blue-700"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 mb-3">Gestión internacional</h3>
+          <ul class="space-y-2 text-gray-600 list-none">
+            <li>• Documentación en país de origen</li>
+            <li>• Legalizaciones y traducciones</li>
+            <li>• Visado de reagrupación familiar</li>
+            <li>• Tarjeta de familiar de comunitario</li>
+          </ul>
+        </div>
+      </div>
+      <div class="bg-gray-100 border border-gray-200 rounded-xl p-6 mb-8">
+        <p class="text-gray-700">Necesitas haber renovado al menos una vez tu permiso de residencia para poder reagrupar. El familiar debe solicitar el visado en el consulado español de su país.</p>
+      </div>
+      <div class="flex flex-wrap gap-2 mb-6">
+        <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">Familia</span>
+        <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">Visado</span>
+        <span class="px-3 py-1 bg-slate-100 text-slate-700 text-sm rounded-full">IPREM</span>
+      </div>
+      <a href="contacto.html#form" class="inline-block px-8 py-4 bg-red-700 hover:bg-red-800 text-white font-semibold rounded-lg transition-all whitespace-nowrap">Consultar reagrupación →</a>
+    </div>
+  </section>
+
+  <!-- Service 5 - Permiso de Trabajo -->
+  <section id="permiso-trabajo" class="py-24 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <div class="inline-flex items-center gap-2 px-4 py-2 bg-yellow-100 border border-yellow-200 rounded-full mb-6">
+        <span class="w-2 h-2 bg-yellow-500 rounded-full"></span>
+        <span class="text-sm font-semibold text-yellow-800">Disponible</span>
+      </div>
+      <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6">Permiso de Trabajo</h2>
+      <p class="text-lg text-gray-600 mb-4 max-w-3xl">
+        Autorización para trabajar en España por cuenta ajena (empleado) o cuenta propia (autónomo). Requiere oferta de trabajo o proyecto empresarial y cumplimiento de requisitos legales.
+      </p>
+      <p class="text-lg text-gray-600 mb-12 max-w-3xl">
+        También gestionamos modificaciones de permiso: cambio de empleador, de cuenta ajena a propia, o de sector. Cada caso tiene plazos y documentación específica.
+      </p>
+      <div class="grid md:grid-cols-3 gap-8 mb-12">
+        <div class="bg-white border border-gray-200 rounded-xl p-6">
+          <div class="w-12 h-12 flex items-center justify-center bg-emerald-100 rounded-lg mb-4">
+            <i class="ri-building-2-line text-2xl text-emerald-700"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 mb-3">Cuenta ajena</h3>
+          <ul class="space-y-2 text-gray-600 list-none">
+            <li>• Contrato de trabajo en vigor</li>
+            <li>• Certificado de empadronamiento del empleador</li>
+            <li>• Informe de situación nacional de empleo</li>
+            <li>• Títulos o experiencia acreditada</li>
+          </ul>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-xl p-6">
+          <div class="w-12 h-12 flex items-center justify-center bg-emerald-100 rounded-lg mb-4">
+            <i class="ri-store-2-line text-2xl text-emerald-700"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 mb-3">Cuenta propia</h3>
+          <ul class="space-y-2 text-gray-600 list-none">
+            <li>• Proyecto de actividad económica</li>
+            <li>• Inversión y viabilidad</li>
+            <li>• Alta en Hacienda y Seguridad Social</li>
+            <li>• Informe favorable de situación nacional</li>
+          </ul>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-xl p-6">
+          <div class="w-12 h-12 flex items-center justify-center bg-emerald-100 rounded-lg mb-4">
+            <i class="ri-exchange-line text-2xl text-emerald-700"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 mb-3">Modificaciones</h3>
+          <ul class="space-y-2 text-gray-600 list-none">
+            <li>• Cambio de empleador</li>
+            <li>• Cuenta ajena a cuenta propia</li>
+            <li>• Cambio de sector o provincia</li>
+            <li>• Plazos según tipo de modificación</li>
+          </ul>
+        </div>
+      </div>
+      <div class="bg-amber-50 border border-amber-200 rounded-xl p-6 mb-8">
+        <p class="text-amber-900"><strong>Importante:</strong> La autorización inicial de trabajo suele requerir informe de situación nacional de empleo. El empleador debe cumplir requisitos de cotización y antigüedad. Te asesoramos sobre la viabilidad antes de iniciar.</p>
+      </div>
+      <a href="contacto.html#form" class="inline-block px-8 py-4 bg-red-700 hover:bg-red-800 text-white font-semibold rounded-lg transition-all whitespace-nowrap">Consultar permiso de trabajo →</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-stone-800 text-white py-16">
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <div>
+          <div class="mb-6 flex items-center gap-3"><img src="https://static.readdy.ai/image/46b10d6d34564fa20f0877258b978e8a/19185ed623c480d9b91b63a3d630ffe5.png" alt="Logo" class="h-16 w-auto drop-shadow-md"><div class="flex flex-col"><span class="text-2xl font-bold text-white tracking-tight leading-tight">Movilidad Global</span><span class="text-xs font-semibold text-red-400 uppercase tracking-widest leading-tight">Legaltech</span></div></div>
+          <p class="text-stone-400 mb-6">Tecnología junto con abogados especialistas para hacer realidad tu proyecto de vida en España.</p>
+          <div class="flex gap-4"><div class="w-10 h-10 flex items-center justify-center bg-white/10 hover:bg-white/20 rounded-lg cursor-pointer transition-all"><i class="ri-instagram-line text-xl"></i></div><div class="w-10 h-10 flex items-center justify-center bg-white/10 hover:bg-white/20 rounded-lg cursor-pointer transition-all"><i class="ri-whatsapp-line text-xl"></i></div></div>
+        </div>
+        <div><h3 class="font-bold text-lg mb-4">Servicios</h3><div class="space-y-3"><a href="regularizacion-2026.html" class="block text-stone-400 hover:text-white transition-colors">Regularización 2026</a><a href="servicios.html" class="block text-stone-400 hover:text-white transition-colors">Arraigos</a><a href="servicios.html" class="block text-stone-400 hover:text-white transition-colors">Familiar de Español</a><a href="servicios.html" class="block text-stone-400 hover:text-white transition-colors">Renovación</a></div></div>
+        <div><h3 class="font-bold text-lg mb-4">Empresa</h3><div class="space-y-3"><a href="nosotros.html" class="block text-stone-400 hover:text-white transition-colors">Quiénes somos</a><a href="nosotros.html" class="block text-stone-400 hover:text-white transition-colors">El equipo</a><a href="precios.html" class="block text-stone-400 hover:text-white transition-colors">Precios</a><a href="contacto.html" class="block text-stone-400 hover:text-white transition-colors">Contacto</a></div></div>
+        <div><h3 class="font-bold text-lg mb-4">Legal</h3><div class="space-y-3"><a href="#" class="block text-stone-400 hover:text-white transition-colors">Aviso legal</a><a href="#" class="block text-stone-400 hover:text-white transition-colors">Privacidad · RGPD</a><a href="#" class="block text-stone-400 hover:text-white transition-colors">Términos de servicio</a><a href="mailto:hola@iassist.es" class="block text-stone-400 hover:text-white transition-colors">hola@iassist.es</a></div></div>
+      </div>
+      <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-stone-400"><span>En Movilidad Global juntamos años de experiencia con tecnología a tu servicio.</span><div class="flex items-center gap-4"><span>🇪🇸 España · 2026</span><a href="https://readdy.ai/?ref=logo" target="_blank" rel="noopener noreferrer" class="text-stone-400 hover:text-white transition-colors">Powered by Readdy</a></div></div>
+    </div>
+  </footer>
+</div>
+
+<script>
+function toggleMobileMenu(){document.getElementById('mobile-menu').classList.toggle('hidden')}
+window.addEventListener('scroll',function(){var b=document.getElementById('top-banner'),n=document.getElementById('navbar'),s=window.scrollY>50;b.classList.toggle('-translate-y-full',s);b.classList.toggle('translate-y-0',!s);n.classList.toggle('top-0',s);n.classList.toggle('top-[44px]',!s);n.classList.toggle('bg-white',s);n.classList.toggle('shadow-lg',s);n.classList.toggle('bg-white/90',!s);n.classList.toggle('backdrop-blur-md',!s)});
+</script>
+</body>
+</html>

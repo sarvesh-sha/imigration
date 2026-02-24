@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/vite.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gestión migratoria inteligente para vivir en España. Abogados especialistas en cada paso. Desde el primer permiso hasta la residencia permanente — todo desde tu móvil, sin burocracia.">
+  <meta name="keywords" content="regularización españa, arraigo, residencia españa, extranjería, permiso trabajo españa">
+  <title>Gestión Migratoria Inteligente para España | Global Mobility</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="min-h-screen bg-white">
+
+  <!-- Top Banner -->
+  <div id="top-banner" class="fixed top-0 left-0 right-0 z-[60] transition-transform duration-300 translate-y-0">
+    <a href="regularizacion-2026.html" class="block w-full bg-gradient-to-r from-red-800 via-red-700 to-red-800 group relative overflow-hidden z-[60]">
+      <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
+      <div class="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-yellow-400 to-transparent"></div>
+      <div class="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-yellow-400/50 to-transparent"></div>
+      <div class="container mx-auto px-6">
+        <div class="flex items-center justify-center gap-4 py-3 relative z-10">
+          <span class="relative flex h-2.5 w-2.5 flex-shrink-0">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-300 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-yellow-400"></span>
+          </span>
+          <span class="text-sm md:text-base font-semibold text-white tracking-wide whitespace-nowrap">
+            <span class="hidden sm:inline">🇪🇸</span> Regularización Extraordinaria España <span class="text-yellow-300 font-bold">2026</span> · Ventana Abril–Junio
+          </span>
+          <span class="hidden md:inline-flex items-center gap-1.5 px-4 py-1 bg-yellow-400 text-red-900 text-sm font-bold rounded-full group-hover:bg-yellow-300 transition-colors whitespace-nowrap">Comprobar si califico <i class="ri-arrow-right-s-line"></i></span>
+          <span class="md:hidden text-yellow-400 font-bold text-lg">→</span>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <!-- Navbar -->
+  <nav id="navbar" class="fixed left-0 right-0 z-50 transition-all duration-300 top-[44px] bg-white/90 backdrop-blur-md">
+    <div class="container mx-auto px-6">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-3 group">
+          <img src="https://static.readdy.ai/image/46b10d6d34564fa20f0877258b978e8a/19185ed623c480d9b91b63a3d630ffe5.png" alt="Movilidad Global Legaltech Logo" class="h-20 w-auto drop-shadow-md group-hover:scale-105 transition-transform duration-200">
+          <div class="flex flex-col">
+            <span class="text-2xl font-bold text-slate-900 tracking-tight leading-tight">Movilidad Global</span>
+            <span class="text-xs font-semibold text-red-700 uppercase tracking-widest leading-tight">Legaltech</span>
+          </div>
+        </a>
+        <div class="hidden lg:flex items-center gap-8">
+          <a href="index.html" class="text-slate-700 hover:text-slate-900 font-medium transition-colors whitespace-nowrap">Inicio</a>
+          <a href="nosotros.html" class="text-slate-700 hover:text-slate-900 font-medium transition-colors whitespace-nowrap">Nosotros</a>
+          <a href="servicios.html" class="text-slate-700 hover:text-slate-900 font-medium transition-colors whitespace-nowrap">Servicios</a>
+          <a href="precios.html" class="text-slate-700 hover:text-slate-900 font-medium transition-colors whitespace-nowrap">Precios</a>
+          <a href="contacto.html" class="text-slate-700 hover:text-slate-900 font-medium transition-colors whitespace-nowrap">Contacto</a>
+        </div>
+        <div class="hidden lg:flex items-center gap-4">
+          <a href="contacto.html" class="px-6 py-2.5 bg-red-700 hover:bg-red-800 text-white font-semibold rounded-lg transition-all whitespace-nowrap">Contactar →</a>
+        </div>
+        <button onclick="toggleMobileMenu()" class="lg:hidden flex flex-col gap-1.5 cursor-pointer" aria-label="Toggle mobile menu">
+          <span class="w-6 h-0.5 bg-slate-900 transition-all block"></span>
+          <span class="w-6 h-0.5 bg-slate-900 transition-all block"></span>
+          <span class="w-6 h-0.5 bg-slate-900 transition-all block"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="fixed inset-0 z-40 lg:hidden hidden">
+    <div class="absolute inset-0 bg-black/50" onclick="toggleMobileMenu()"></div>
+    <div class="absolute top-0 right-0 bottom-0 w-80 bg-white shadow-2xl p-6 overflow-y-auto">
+      <div class="flex flex-col gap-4">
+        <a href="index.html" class="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 rounded-lg transition-colors"><span class="text-xl">🏠</span><span class="font-medium text-slate-900">Inicio</span></a>
+        <a href="servicios.html" class="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 rounded-lg transition-colors"><span class="text-xl">📋</span><span class="font-medium text-slate-900">Servicios</span></a>
+        <a href="nosotros.html" class="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 rounded-lg transition-colors"><span class="text-xl">👤</span><span class="font-medium text-slate-900">Nosotros</span></a>
+        <a href="precios.html" class="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 rounded-lg transition-colors"><span class="text-xl">💳</span><span class="font-medium text-slate-900">Precios</span></a>
+        <a href="contacto.html" class="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 rounded-lg transition-colors"><span class="text-xl">📧</span><span class="font-medium text-slate-900">Contacto</span></a>
+        <a href="contacto.html" class="mt-4 px-6 py-3 bg-red-700 hover:bg-red-800 text-white font-semibold rounded-lg transition-all whitespace-nowrap text-center block">Contactar →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 pt-[64px]">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(212,160,23,0.08),transparent_50%)]"></div>
+    <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-yellow-500/[0.08] rounded-full blur-3xl"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-red-600/[0.06] rounded-full blur-3xl"></div>
+    <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-red-700 via-yellow-500 to-red-700"></div>
+    <div class="container mx-auto px-6 py-20 relative z-10">
+      <div class="max-w-4xl mx-auto text-center w-full">
+        <div class="inline-flex items-center gap-2 px-4 py-2 bg-yellow-500/10 border border-yellow-500/20 rounded-full mb-8">
+          <div class="w-2 h-2 bg-yellow-400 rounded-full animate-pulse"></div>
+          <span class="text-sm text-yellow-300">Regularización Extraordinaria España 2026 · Ventana Abril–Junio</span>
+        </div>
+        <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+          Gestión migratoria<br>
+          <span class="text-yellow-400">inteligente</span> para<br>
+          <span class="relative inline-block">vivir en España.<span class="absolute bottom-2 left-0 w-full h-3 bg-red-600/20"></span></span>
+        </h1>
+        <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+          <strong>Abogados especialistas</strong> en cada paso. Desde el primer permiso hasta la residencia permanente — todo desde tu móvil, sin burocracia.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+          <a href="regularizacion-2026.html" class="px-8 py-4 bg-red-700 hover:bg-red-800 text-white font-semibold rounded-lg transition-all whitespace-nowrap inline-block text-center">✓ Comprobar si califico →</a>
+          <a href="servicios.html" class="px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-lg border border-white/20 transition-all whitespace-nowrap inline-block text-center">Ver todos los servicios</a>
+        </div>
+        <div class="flex flex-wrap items-center justify-center gap-6 text-sm">
+          <div class="flex items-center gap-2">
+            <div class="flex -space-x-2">
+              <div class="w-8 h-8 rounded-full bg-gradient-to-br from-yellow-500 to-yellow-600 flex items-center justify-center text-white text-xs font-bold border-2 border-slate-900">MG</div>
+              <div class="w-8 h-8 rounded-full bg-gradient-to-br from-red-600 to-red-700 flex items-center justify-center text-white text-xs font-bold border-2 border-slate-900">JR</div>
+              <div class="w-8 h-8 rounded-full bg-gradient-to-br from-yellow-600 to-amber-700 flex items-center justify-center text-white text-xs font-bold border-2 border-slate-900">AL</div>
+              <div class="w-8 h-8 rounded-full bg-gradient-to-br from-red-700 to-red-800 flex items-center justify-center text-white text-xs font-bold border-2 border-slate-900">+2k</div>
+            </div>
+            <span class="text-gray-300"><strong class="text-white">+2.400 personas</strong> ya confían</span>
+          </div>
+          <div class="w-px h-6 bg-white/20"></div>
+          <div class="flex items-center gap-2 text-gray-300"><span class="text-yellow-400">★★★★★</span><strong class="text-white">4.9/5</strong></div>
+          <div class="w-px h-6 bg-white/20"></div>
+          <div class="flex items-center gap-2 text-gray-300">🔒<strong class="text-white">RGPD compliant</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Platform Section -->
+  <section class="py-24 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <div class="text-sm font-semibold text-red-700 mb-4 uppercase tracking-wider">La plataforma</div>
+          <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6">Tu proceso migratorio en un solo lugar.</h2>
+          <p class="text-lg text-gray-600 mb-8">Documentos, firmas, seguimiento y comunicación con tu especialista — <strong>todo en una app diseñada para ti.</strong></p>
+          <div class="space-y-6 mb-8">
+            <div class="flex gap-4"><div class="w-12 h-12 flex items-center justify-center bg-yellow-100 rounded-lg text-2xl flex-shrink-0">🤖</div><div><div class="font-semibold text-slate-900 mb-1">Te guiamos paso a paso</div><div class="text-gray-600">Una pregunta a la vez, sin jerga legal. 24/7.</div></div></div>
+            <div class="flex gap-4"><div class="w-12 h-12 flex items-center justify-center bg-yellow-100 rounded-lg text-2xl flex-shrink-0">👤</div><div><div class="font-semibold text-slate-900 mb-1">Abogados especialistas</div><div class="text-gray-600">Ana y el equipo revisan cada expediente.</div></div></div>
+            <div class="flex gap-4"><div class="w-12 h-12 flex items-center justify-center bg-yellow-100 rounded-lg text-2xl flex-shrink-0">📲</div><div><div class="font-semibold text-slate-900 mb-1">WhatsApp proactivo</div><div class="text-gray-600">Te avisamos en cada momento clave.</div></div></div>
+            <div class="flex gap-4"><div class="w-12 h-12 flex items-center justify-center bg-yellow-100 rounded-lg text-2xl flex-shrink-0">✍️</div><div><div class="font-semibold text-slate-900 mb-1">Firma digital legal</div><div class="text-gray-600">Válida bajo eIDAS y Ley 6/2020.</div></div></div>
+          </div>
+          <a href="app.html" class="px-8 py-4 bg-red-700 hover:bg-red-800 text-white font-semibold rounded-lg transition-all whitespace-nowrap inline-block">Ver la app en acción →</a>
+        </div>
+        <div class="relative">
+          <div class="relative z-10 bg-white rounded-3xl shadow-2xl p-6 max-w-sm mx-auto">
+            <div class="flex items-center justify-between mb-6 text-sm"><span class="font-semibold">9:41</span><span>●●●</span></div>
+            <div class="flex items-center justify-center mb-6"><div class="w-16 h-16 bg-slate-900 rounded-2xl flex items-center justify-center"><img src="https://static.readdy.ai/image/46b10d6d34564fa20f0877258b978e8a/19185ed623c480d9b91b63a3d630ffe5.png" alt="Logo" class="h-10"></div></div>
+            <h3 class="text-2xl font-bold text-slate-900 mb-8">Hola, María 👋</h3>
+            <div class="bg-gradient-to-br from-red-700 to-red-800 rounded-2xl p-6 text-white mb-6">
+              <div class="text-sm mb-2">Regularización 2026</div>
+              <div class="text-lg font-semibold mb-4">4 de 9 documentos</div>
+              <div class="mb-4"><div class="flex justify-between text-sm mb-2"><span>Progreso</span><span>44%</span></div><div class="w-full bg-white/20 rounded-full h-2"><div class="bg-yellow-400 rounded-full h-2" style="width: 44%"></div></div></div>
+              <button class="w-full py-3 bg-white text-red-700 font-semibold rounded-lg hover:bg-gray-50 transition-all cursor-pointer whitespace-nowrap">▶ Continuar</button>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-center gap-3"><div class="w-8 h-8 flex items-center justify-center bg-red-700 text-white rounded-full text-sm font-bold">✓</div><span class="text-gray-600">Pasaporte</span></div>
+              <div class="flex items-center gap-3"><div class="w-8 h-8 flex items-center justify-center bg-yellow-100 text-yellow-700 rounded-full text-sm font-bold">→</div><span class="text-gray-900 font-semibold">Empadronamiento</span></div>
+              <div class="flex items-center gap-3"><div class="w-8 h-8 flex items-center justify-center bg-gray-100 text-gray-400 rounded-full text-sm"></div><span class="text-gray-400">Antecedentes</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-24 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="text-sm font-semibold text-red-700 mb-4 uppercase tracking-wider">Testimonios</div>
+        <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6">Historias reales de personas reales.</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-gray-50 rounded-2xl p-8">
+          <div class="text-yellow-500 mb-4">★★★★★</div>
+          <p class="text-gray-700 mb-6">&ldquo;Llevaba años pensando que era imposible. En 3 semanas tenía todo listo y firmé desde el móvil. Ana fue increíble.&rdquo;</p>
+          <div class="flex items-center gap-3"><div class="w-12 h-12 bg-gradient-to-br from-yellow-500 to-amber-600 rounded-full flex items-center justify-center text-white font-bold">MG</div><div><div class="font-semibold text-slate-900">María G.</div><div class="text-sm text-gray-600">🇨🇴 Colombia · Madrid</div></div></div>
+        </div>
+        <div class="bg-gray-50 rounded-2xl p-8">
+          <div class="text-yellow-500 mb-4">★★★★★</div>
+          <p class="text-gray-700 mb-6">&ldquo;Me avisaban por WhatsApp en cada paso. No tuve que llamar ni preguntar nada — todo llegaba solo.&rdquo;</p>
+          <div class="flex items-center gap-3"><div class="w-12 h-12 bg-gradient-to-br from-red-600 to-red-700 rounded-full flex items-center justify-center text-white font-bold">JR</div><div><div class="font-semibold text-slate-900">Jorge R.</div><div class="text-sm text-gray-600">🇪🇨 Ecuador · Barcelona</div></div></div>
+        </div>
+        <div class="bg-gray-50 rounded-2xl p-8">
+          <div class="text-yellow-500 mb-4">★★★★★</div>
+          <p class="text-gray-700 mb-6">&ldquo;La IA me hizo todo fácil. Cuando tuve una duda Ana respondió en minutos. Me sentí acompañada siempre.&rdquo;</p>
+          <div class="flex items-center gap-3"><div class="w-12 h-12 bg-gradient-to-br from-amber-600 to-yellow-700 rounded-full flex items-center justify-center text-white font-bold">AL</div><div><div class="font-semibold text-slate-900">Amina L.</div><div class="text-sm text-gray-600">🇲🇦 Marruecos · Valencia</div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-24 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="text-sm font-semibold text-red-700 mb-4 uppercase tracking-wider">Preguntas frecuentes</div>
+        <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-6">Todo lo que necesitas saber.</h2>
+      </div>
+      <div class="max-w-3xl mx-auto space-y-4">
+        <div class="bg-white rounded-xl shadow-sm overflow-hidden"><button onclick="toggleFAQ(this)" class="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-gray-50 transition-all cursor-pointer"><span class="font-semibold text-slate-900">¿Cuánto cuesta el servicio?</span><span class="text-red-700 faq-arrow">▼</span></button><div class="faq-answer"><div class="px-6 pb-5 text-gray-700">El registro es gratuito. Solo pagas si decides continuar: <strong>250€ + IVA + tasas administrativas correspondiente</strong> por gestión completa. <a href="precios.html" class="text-red-700 hover:underline">Ver precios →</a></div></div></div>
+        <div class="bg-white rounded-xl shadow-sm overflow-hidden"><button onclick="toggleFAQ(this)" class="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-gray-50 transition-all cursor-pointer"><span class="font-semibold text-slate-900">¿Qué pasa si no tengo todos los documentos?</span><span class="text-red-700 faq-arrow">▼</span></button><div class="faq-answer"><div class="px-6 pb-5 text-gray-700">Puedes empezar sin tenerlos todos. La plataforma guarda tu progreso y puedes ir subiendo documentos en diferentes sesiones. Tu especialista te indica cómo conseguir los que te faltan.</div></div></div>
+        <div class="bg-white rounded-xl shadow-sm overflow-hidden"><button onclick="toggleFAQ(this)" class="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-gray-50 transition-all cursor-pointer"><span class="font-semibold text-slate-900">¿Cuándo se abre la ventana de presentación?</span><span class="text-red-700 faq-arrow">▼</span></button><div class="faq-answer"><div class="px-6 pb-5 text-gray-700">Se espera que el portal gubernamental abra en <strong>abril de 2026</strong> y cierre el 30 de junio de 2026. Presentamos todas las solicitudes automáticamente en cuanto abra.</div></div></div>
+        <div class="bg-white rounded-xl shadow-sm overflow-hidden"><button onclick="toggleFAQ(this)" class="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-gray-50 transition-all cursor-pointer"><span class="font-semibold text-slate-900">¿Puedo trabajar mientras espero la resolución?</span><span class="text-red-700 faq-arrow">▼</span></button><div class="faq-answer"><div class="px-6 pb-5 text-gray-700">Sí. Una vez que la administración admite tu expediente, tienes derecho a trabajar en aproximadamente 15 días hábiles.</div></div></div>
+        <div class="bg-white rounded-xl shadow-sm overflow-hidden"><button onclick="toggleFAQ(this)" class="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-gray-50 transition-all cursor-pointer"><span class="font-semibold text-slate-900">¿Mi pasaporte caducado es válido?</span><span class="text-red-700 faq-arrow">▼</span></button><div class="faq-answer"><div class="px-6 pb-5 text-gray-700">Sí, un pasaporte caducado es válido siempre que cubra tu fecha de entrada a España. Necesitas incluir <strong>todas las páginas</strong>, incluyendo las páginas en blanco.</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="home-cta" class="py-24 bg-gradient-to-br from-slate-900 to-slate-800">
+    <div class="container mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto">
+        <div class="text-sm font-semibold text-yellow-400 mb-4 uppercase tracking-wider">Es tu momento</div>
+        <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Tu camino a España empieza hoy.</h2>
+        <p class="text-xl text-gray-300 mb-8">30 segundos para registrarte. 5 minutos para saber si calificas.</p>
+        <div class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto mb-6">
+          <input type="tel" placeholder="🇪🇸 +34 · Tu número de WhatsApp" class="flex-1 px-6 py-4 rounded-lg border-2 border-gray-600 bg-white/10 text-white placeholder-gray-400 focus:outline-none focus:border-yellow-500 text-sm">
+          <a href="regularizacion-2026.html" class="px-8 py-4 bg-red-700 hover:bg-red-800 text-white font-semibold rounded-lg transition-all whitespace-nowrap inline-block text-center">Empezar →</a>
+        </div>
+        <div class="text-gray-400 text-sm">🔒 Sin compromiso · Código por WhatsApp · RGPD</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-stone-800 text-white py-16">
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <div>
+          <div class="mb-6 flex items-center gap-3"><img src="https://static.readdy.ai/image/46b10d6d34564fa20f0877258b978e8a/19185ed623c480d9b91b63a3d630ffe5.png" alt="Logo" class="h-16 w-auto drop-shadow-md"><div class="flex flex-col"><span class="text-2xl font-bold text-white tracking-tight leading-tight">Movilidad Global</span><span class="text-xs font-semibold text-red-400 uppercase tracking-widest leading-tight">Legaltech</span></div></div>
+          <p class="text-stone-400 mb-6">Tecnología junto con abogados especialistas para hacer realidad tu proyecto de vida en España.</p>
+          <div class="flex gap-4"><div class="w-10 h-10 flex items-center justify-center bg-white/10 hover:bg-white/20 rounded-lg cursor-pointer transition-all"><i class="ri-instagram-line text-xl"></i></div><div class="w-10 h-10 flex items-center justify-center bg-white/10 hover:bg-white/20 rounded-lg cursor-pointer transition-all"><i class="ri-whatsapp-line text-xl"></i></div></div>
+        </div>
+        <div><h3 class="font-bold text-lg mb-4">Servicios</h3><div class="space-y-3"><a href="regularizacion-2026.html" class="block text-stone-400 hover:text-white transition-colors">Regularización 2026</a><a href="servicios.html" class="block text-stone-400 hover:text-white transition-colors">Arraigos</a><a href="servicios.html" class="block text-stone-400 hover:text-white transition-colors">Familiar de Español</a><a href="servicios.html" class="block text-stone-400 hover:text-white transition-colors">Renovación</a></div></div>
+        <div><h3 class="font-bold text-lg mb-4">Empresa</h3><div class="space-y-3"><a href="nosotros.html" class="block text-stone-400 hover:text-white transition-colors">Quiénes somos</a><a href="nosotros.html" class="block text-stone-400 hover:text-white transition-colors">El equipo</a><a href="precios.html" class="block text-stone-400 hover:text-white transition-colors">Precios</a><a href="contacto.html" class="block text-stone-400 hover:text-white transition-colors">Contacto</a></div></div>
+        <div><h3 class="font-bold text-lg mb-4">Legal</h3><div class="space-y-3"><a href="#" class="block text-stone-400 hover:text-white transition-colors">Aviso legal</a><a href="#" class="block text-stone-400 hover:text-white transition-colors">Privacidad · RGPD</a><a href="#" class="block text-stone-400 hover:text-white transition-colors">Términos de servicio</a><a href="mailto:hola@iassist.es" class="block text-stone-400 hover:text-white transition-colors">hola@iassist.es</a></div></div>
+      </div>
+      <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-stone-400"><span>En Movilidad Global juntamos años de experiencia con tecnología a tu servicio.</span><div class="flex items-center gap-4"><span>🇪🇸 España · 2026</span><a href="https://readdy.ai/?ref=logo" target="_blank" rel="noopener noreferrer" class="text-stone-400 hover:text-white transition-colors">Powered by Readdy</a></div></div>
+    </div>
+  </footer>
+
+  <!-- Floating CTA -->
+  <a href="contacto.html" class="fixed bottom-8 right-8 z-50 px-6 py-4 bg-red-700 hover:bg-red-800 text-white font-semibold rounded-full shadow-2xl transition-all hover:scale-105 whitespace-nowrap flex items-center gap-2"><span>Empezar ahora</span><i class="ri-arrow-right-line"></i></a>
+</div>
+
+<script>
+function toggleMobileMenu(){document.getElementById('mobile-menu').classList.toggle('hidden')}
+function toggleFAQ(btn){var a=btn.nextElementSibling;var arrow=btn.querySelector('.faq-arrow');a.classList.toggle('open');arrow.classList.toggle('open')}
+window.addEventListener('scroll',function(){var b=document.getElementById('top-banner'),n=document.getElementById('navbar'),s=window.scrollY>50;b.classList.toggle('-translate-y-full',s);b.classList.toggle('translate-y-0',!s);n.classList.toggle('top-0',s);n.classList.toggle('top-[44px]',!s);n.classList.toggle('bg-white',s);n.classList.toggle('shadow-lg',s);n.classList.toggle('bg-white/90',!s);n.classList.toggle('backdrop-blur-md',!s)});
+</script>
+</body>
+</html>
